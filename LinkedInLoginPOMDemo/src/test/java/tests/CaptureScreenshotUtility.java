@@ -17,11 +17,11 @@ public class CaptureScreenshotUtility {
             File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
             if (status.equals("FAILURE")) {
-                FileUtils.copyFile(scrFile, new File("C:\\Users\\SHREE\\eclipse-workspace\\LinkedInLoginPOMDemo\\TestScreenshots\\ScreenshotsFailure\\" + screenShotName + ".png"));
+                FileUtils.copyFile(scrFile, new File("C:\\Users\\SHREE\\git\\LinkedInLoginDemoPOM\\LinkedInLoginPOMDemo\\TestScreenshots\\ScreenshotsFailure\\" + screenShotName + ".png"));
             }
             else if(status.equals("SUCCESS"))
             {
-                FileUtils.copyFile(scrFile, new File("C:\\Users\\SHREE\\eclipse-workspace\\LinkedInLoginPOMDemo\\TestScreenshots\\ScreenshotsSuccess\\" + screenShotName + ".png"));
+                FileUtils.copyFile(scrFile, new File("C:\\Users\\SHREE\\git\\LinkedInLoginDemoPOM\\LinkedInLoginPOMDemo\\TestScreenshots\\ScreenshotsSuccess\\" + screenShotName + ".png"));
             }
 
 
